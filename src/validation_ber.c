@@ -6,7 +6,7 @@
 /*   By: jaboga-d <jaboga-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:26:24 by jaboga-d          #+#    #+#             */
-/*   Updated: 2025/05/09 10:43:26 by jaboga-d         ###   ########.fr       */
+/*   Updated: 2025/05/19 12:15:25 by jaboga-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	check_the_arguments(int argc, char **argv)
 	if (argc != 2)
 	{
 		write(1, "Error\n", 6);
-		return ;
+		exit (1);
 	}
 	len = ft_strlen(argv[1]);
 	if (len < 4 || ft_strncmp(argv[1] + len - 4, ".ber", 4) != 0)

@@ -6,7 +6,7 @@
 #    By: jaboga-d <jaboga-d@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/13 15:24:41 by jaboga-d          #+#    #+#              #
-#    Updated: 2025/05/09 13:48:27 by jaboga-d         ###   ########.fr        #
+#    Updated: 2025/05/19 12:07:55 by jaboga-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,7 +66,7 @@ BSOURCES = ft_lstnew_bonus.c	\
 OBJECTS = $(SOURCES:.c=.o)
 BOBJECTS = $(BSOURCES:.c=.o)
 
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)

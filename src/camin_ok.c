@@ -6,7 +6,7 @@
 /*   By: jaboga-d <jaboga-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 18:27:00 by jaboga-d          #+#    #+#             */
-/*   Updated: 2025/05/08 09:57:17 by jaboga-d         ###   ########.fr       */
+/*   Updated: 2025/05/19 12:28:30 by jaboga-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ char	**copy_map(char **map, int height)
 		copy[i] = cpy_str(map[i]);
 		i++;
 	}
-	copy[i] = '\0';
+	copy[i] = NULL;
 	return (copy);
 }
 
@@ -91,6 +91,6 @@ int	the_camin_is_ok(char **map, int height, int player_x, int player_y)
 		}
 		y++;
 	}
-	free(copy_map_new);
+	free_map(copy_map_new);
 	return (1);
 }
